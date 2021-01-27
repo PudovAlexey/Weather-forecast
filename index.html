@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+    <div class="weather">
+        <div class="form-control">
+            <select class="city-name">
+				<option value="524894">Москва</option>
+				<option value="501175">Ростов на Дону</option>
+				<option value="542415">Краснодарский Край</option>
+				<option value="491687">Смоленск</option>
+			</select>
+        </div>
+
+        <div class="form-control">
+            <ul class="information">
+                <li class="country"></li>
+                <li class="time">8:33</li>
+                <li class="weekday">Среда</li>
+                <li class="date">33.08.3030</li>
+            </ul>
+
+            <ul class="out">
+                <li class="temperature">38</li>
+                <li class="description">Сегодня холодно</li>
+                <li class="icon"></li>
+                <li class="recomendation"></li>
+            </ul>
+        </div>
+        <!--slider forecast -->
+        <div class="slider">
+            <div class="item">
+                <div class="day">
+                    <span class="forecast-day">Вт. 18</span>
+                    <ul class="column">
+                        <li class="icon-1-night"></li>
+                        <li class="temperature-1-night">20</li>
+                        <li class="timeofday">Ночь</li>
+                    </ul>
+                    <ul class="column">
+                        <li class="icon-1-morning"></li>
+                        <li class="temperature-1-morning">20</li>
+                        <li class="timeofday">Утро</li>
+                    </ul>
+                    <ul class="column">
+                        <li class="icon-1-noon"></li>
+                        <li class="temperature-1-noon">20</li>
+                        <li class="timeofday">День</li>
+                    </ul>
+                    <ul class="column">
+                        <li class="icon-1-evening"></li>
+                        <li class="temperature-1-evening">20</li>
+                        <li class="timeofday">Вечер</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="day">
+                    <span class="forecast-day">Вт. 18</span>
+                    <ul class="column">
+                        <li class="icon-2-night"></li>
+                        <li class="temperature-2-night">20</li>
+                        <li class="timeofday">Ночь</li>
+                    </ul>
+                    <ul class="column">
+                        <li class="icon-2-morning"></li>
+                        <li class="temperature-2-morning">20</li>
+                        <li class="timeofday">Утро</li>
+                    </ul>
+                    <ul class="column">
+                        <li class="icon-2-noon"></li>
+                        <li class="temperature-2-noon">20</li>
+                        <li class="timeofday">День</li>
+                    </ul>
+                    <ul class="column">
+                        <li class="icon-2-evening"></li>
+                        <li class="temperature-2-evening">20</li>
+                        <li class="timeofday">Вечер</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="day">
+                    <span class="forecast-day">Вт. 18</span>
+                    <ul class="column">
+                        <li class="icon-3-night"></li>
+                        <li class="temperature-3-night">20</li>
+                        <li class="timeofday">Ночь</li>
+                    </ul>
+                    <ul class="column">
+                        <li class="icon-3-morning"></li>
+                        <li class="temperature-3-morning">20</li>
+                        <li class="timeofday">Утро</li>
+                    </ul>
+                    <ul class="column">
+                        <li class="icon-3-noon"></li>
+                        <li class="temperature-3-noon">20</li>
+                        <li class="timeofday">День</li>
+                    </ul>
+                    <ul class="column">
+                        <li class="icon-3-evening"></li>
+                        <li class="temperature-3-evening">20</li>
+                        <li class="timeofday">Вечер</li>
+                    </ul>
+                </div>
+            </div>
+            <a class="prev" onclick="minusSlide()">&#8249;</a>
+            <a class="next" onclick="plusSlide()">&#8250;</a>
+        </div>
+
+        <div class="slider-dots">
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <!--slider forecast -->
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

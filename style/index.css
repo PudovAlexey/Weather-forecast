@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+.weather {
+    max-width: 350px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #fff;
+    background-image: url(https://content-5.foto.my.mail.ru/community/blog_vitalderov/_groupsphoto/h-12876.jpg);
+}
+
+.form-control {
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    text-align: center;
+    list-style-type: none;
+}
+
+.city-name {
+    text-align-last: center;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.forecast-day {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+.out {
+    padding-right: 15%;
+    text-align: center;
+}
+
+.information {
+    padding-right: 15%;
+}
+
+.time {
+    text-align: center;
+    font-size: 4.8ex;
+    text-shadow: 4px 4px 4px blue;
+}
+
+.weekday {
+    text-align: center;
+}
+
+.country {
+    font-size: 2ex;
+    text-align: center;
+    padding-right: 15%;
+    margin-left: 12%;
+}
+
+
+/* slider forecast */
+
+.forecast-day {
+    margin-left: auto;
+}
+
+
+/* Масштабируемость */
+
+.slider .item img {
+    object-fit: cover;
+    width: 20%;
+    height: 35px;
+    margin-bottom: 0px;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    max-height: 20%;
+}
+
+.column li {
+    margin-left: 50px;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.icon-1 {
+    margin-right: 58%;
+}
+
+
+/* buttons */
+
+.slider .prev {
+    margin-left: 0px;
+}
+
+.slider .prev,
+.slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 70%;
+    width: 0%;
+    margin-top: -5%;
+    margin-left: 3%;
+    margin-right: 8%;
+    padding: -25%;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* При наведении на кнопки добавляем фон кнопок */
+
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Кружочки */
+
+.slider-dots {
+    text-align: center;
+}
+
+.slider-dots_item {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 15%;
+}
+
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+
+/* Анимация слайдов */
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+ul.column li {
+    display: inline;
+    height: 25px;
+    padding-top: 200px;
+}
+
+.forecast-day {
+    text-align: right;
+    margin-right: auto;
+}
